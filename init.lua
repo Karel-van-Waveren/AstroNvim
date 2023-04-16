@@ -4,7 +4,4 @@ return {
   -- -- vim.cmd.colorscheme "catppuccin-mocha"
   --
   --- notify fix
-  notify = {
-    background_colour = "#000000",
-  },
 }
