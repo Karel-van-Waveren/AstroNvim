@@ -26,11 +26,16 @@ return {
           "clippy::cast-precision-loss",
         },
       },
-      procMacro = {
-        enable = true,
-      },
-      inlayHints = {
-        locationLinks = false,
+      -- procMacro = {
+      --   enable = true,
+      -- },
+      -- inlayHints = {
+      --   locationLinks = false,
+      -- },
+      files = {
+        excludeDirs = {
+          "/Users/karel/.cargo/",
+        },
       },
     },
   },
