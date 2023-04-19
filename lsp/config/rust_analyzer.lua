@@ -24,6 +24,8 @@ return {
           "clippy::cast-sign-loss",
           "-A",
           "clippy::cast-precision-loss",
+          "-A",
+          "clippy::future_not_send",
         },
       },
       -- procMacro = {
