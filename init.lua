@@ -7,4 +7,15 @@ return {
   -- colorscheme = "nightfox"
   colorscheme = "kanagawa",
   -- colorscheme = "tokyonight",
+  lsp = {
+    capabilities = {
+      textDocument = {
+        completion = {
+          completionItem = {
+            snippetSupport = false,
+          },
+        },
+      },
+    },
+  },
 }
