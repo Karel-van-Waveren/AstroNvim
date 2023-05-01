@@ -29,23 +29,6 @@ return {
       },
     },
   },
-  { import = "astrocommunity.colorscheme.nightfox" },
   { import = "astrocommunity.colorscheme.kanagawa" },
-  { import = "astrocommunity.colorscheme.rose-pine" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
-  {
-    -- further customize the options set by the community
-    "catppuccin",
-    opts = {
-      flavour = "mocha",
-      transparent_background = true,
-      integrations = {
-        neotree = true,
-        treesitter = true,
-      },
-    },
-  },
-  { import = "astrocommunity.colorscheme.oxocarbon" },
-  { import = "astrocommunity.colorscheme.tokyonight" },
   { import = "astrocommunity.motion.nvim-surround" },
 }
