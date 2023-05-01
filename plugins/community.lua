@@ -47,4 +47,5 @@ return {
   },
   { import = "astrocommunity.colorscheme.oxocarbon" },
   { import = "astrocommunity.colorscheme.tokyonight" },
+  { import = "astrocommunity.motion.nvim-surround" },
 }
