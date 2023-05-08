@@ -32,5 +32,4 @@ return {
   { import = "astrocommunity.colorscheme.kanagawa" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.colorscheme.monokai-pro" },
-  { import = "astrocommunity.utility.transparent-nvim" },
 }
