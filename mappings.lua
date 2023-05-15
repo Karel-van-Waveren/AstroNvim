@@ -8,10 +8,10 @@ return {
     ["g*"] = { "g*zz" },
     ["<C-u>"] = { "<C-u>zz" },
     ["<C-d>"] = { "<C-d>zz" },
-    -- Very magic by default
-    ["?"] = { "?\\v" },
-    ["/"] = { "/\\v" },
-    ["%s"] = { "/\\v" },
+    -- -- Very magic by default
+    -- ["?"] = { "?\\v" },
+    -- ["/"] = { "/\\v" },
+    -- ["%s"] = { "/\\v" },
     -- Open Alpha Automatically When No More Buffers
     ["<leader>c"] = {
       function()
