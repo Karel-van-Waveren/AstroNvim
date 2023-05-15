@@ -33,4 +33,6 @@ return {
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.colorscheme.monokai-pro" },
   { import = "astrocommunity.utility.transparent-nvim" },
+  { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
+  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
 }
