@@ -12,6 +12,11 @@ return {
     -- ["?"] = { "?\\v" },
     -- ["/"] = { "/\\v" },
     -- ["%s"] = { "/\\v" },
+    --" No arrow keys --- force yourself to use the home row
+    ["<up>"] = { "<Nop>" },
+    ["<down>"] = { "<Nop>" },
+    ["<left>"] = { "<Nop>" },
+    ["<right>"] = { "<Nop>" },
     -- Open Alpha Automatically When No More Buffers
     ["<leader>c"] = {
       function()
@@ -24,5 +29,17 @@ return {
   },
   c = {
     ["%s"] = { "%sm/" },
+  },
+  i = {
+    ["<up>"] = { "<Nop>" },
+    ["<down>"] = { "<Nop>" },
+    ["<left>"] = { "<Nop>" },
+    ["<right>"] = { "<Nop>" },
+  },
+  v = {
+    ["<up>"] = { "<Nop>" },
+    ["<down>"] = { "<Nop>" },
+    ["<left>"] = { "<Nop>" },
+    ["<right>"] = { "<Nop>" },
   },
 }
