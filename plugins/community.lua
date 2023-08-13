@@ -39,4 +39,5 @@ return {
   { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
   { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
   { import = "astrocommunity.project.nvim-spectre" },
+  { import = "astrocommunity.workflow.bad-practices-nvim" },
 }
