@@ -1,6 +1,14 @@
 return {
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.yaml" },
   {
     "simrat39/rust-tools.nvim",
     opts = {
@@ -33,10 +41,8 @@ return {
   { import = "astrocommunity.colorscheme.monokai-pro-nvim" },
   { import = "astrocommunity.colorscheme.gruvbox-baby" },
   { import = "astrocommunity.colorscheme.mellow-nvim" },
+  { import = "astrocommunity.colorscheme.melange-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
-  { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
   { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
-  { import = "astrocommunity.project.nvim-spectre" },
-  { import = "astrocommunity.workflow.bad-practices-nvim" },
 }
