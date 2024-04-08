@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -44,6 +42,27 @@ return {
     mappings = {
       -- first key is the mode
       n = {
+        -- Center search centered
+        ["n"] = { "nzz" },
+        ["N"] = { "Nzz" },
+        ["*"] = { "*zz" },
+        ["#"] = { "#zz" },
+        ["g*"] = { "g*zz" },
+        ["<C-u>"] = { "<C-u>zz" },
+        ["<C-d>"] = { "<C-d>zz" },
+
+        -- Open Alpha Automatically When No More Buffers
+        ["<leader>c"] = {
+          function()
+            local bufs = vim.fn.getbufinfo { buflisted = 1 }
+            require("astronvim.utils.buffer").close(0)
+            if require("astronvim.utils").is_available "alpha-nvim" and not bufs[2] then
+              require("alpha").start(true)
+            end
+          end,
+          desc = "Close buffer",
+        },
+
         -- second key is the lefthand side of the map
 
         -- navigate buffer tabs with `H` and `L`
