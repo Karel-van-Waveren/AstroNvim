@@ -3,6 +3,16 @@
 
 ---@type LazySpec
 return {
+  --  disable rust_analyzer install by mason
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      setup = {
+        rust_analyzer = function() return true end,
+      },
+    },
+  },
+  -- remove buffers and git_status from neo-tree
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = function(_, opts)
@@ -18,6 +28,7 @@ return {
       return opts
     end,
   },
+  -- show method vars
   {
     "ray-x/lsp_signature.nvim",
     event = "BufRead",
@@ -33,12 +44,14 @@ return {
     end,
     opts = {},
   },
+  -- highlight similar words
   {
     "RRethy/vim-illuminate",
     opts = {
       delay = 10,
     },
   },
+  -- ghost text
   {
     "hrsh7th/nvim-cmp",
     opts = function(_, config)
@@ -48,14 +61,7 @@ return {
       return config
     end,
   },
-  {
-    {
-      "rcarriga/nvim-notify",
-      opts = {
-        background_colour = "#000000",
-      },
-    },
-  },
+  -- cat
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
