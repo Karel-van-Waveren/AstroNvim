@@ -92,6 +92,48 @@ return {
       return opts
     end,
   },
+  {
+    "AstroNvim/astrolsp",
+    opts = {
+      config = {
+        rust_analyzer = {
+          settings = {
+            ["rust-analyzer"] = {
+              check = {
+                overrideCommand = {
+                  "cargo",
+                  "clippy",
+                  "--workspace",
+                  "--message-format=json",
+                  "--all-targets",
+                  "--all-features",
+                  "--",
+                  "-W",
+                  "clippy::pedantic",
+                  "-W",
+                  "clippy::nursery",
+                  "-A",
+                  "clippy::missing-panics-doc",
+                  "-A",
+                  "clippy::missing-errors-doc",
+                  "-A",
+                  "clippy::cast-possible-truncation",
+                  "-A",
+                  "clippy::cast-sign-loss",
+                  "-A",
+                  "clippy::cast-precision-loss",
+                  "-A",
+                  "clippy::future_not_send",
+                  "-A",
+                  "clippy::significant-drop-tightening",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
 
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
