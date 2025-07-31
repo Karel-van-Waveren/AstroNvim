@@ -22,5 +22,11 @@ return {
   { import = "astrocommunity.colorscheme.gruvbox-baby" },
   { import = "astrocommunity.colorscheme.mellow-nvim" },
   { import = "astrocommunity.colorscheme.melange-nvim" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.file-explorer.oil-nvim" },
+  { import = "astrocommunity.search.grug-far-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+  -- { import = "astrocommunity.utility.noice-nvim" },
 }
