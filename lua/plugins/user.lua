@@ -79,6 +79,9 @@ return {
         n = {
           ["L"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
           ["H"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
+          ["<Leader>q"] = { "<Cmd>q<CR>", desc = "Quit Window" },
+          ["<C-Q>"] = { "<Cmd>q<CR>", desc = "Force quit" },
+          ["n"] = { "nzz" },
         },
       },
     },
