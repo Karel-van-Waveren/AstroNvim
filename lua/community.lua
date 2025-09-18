@@ -28,5 +28,6 @@ return {
   { import = "astrocommunity.search.grug-far-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.markdown-and-latex.markview-nvim" },
+  { import = "astrocommunity.quickfix.quicker-nvim" },
   -- { import = "astrocommunity.utility.noice-nvim" },
 }
